@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blooket Cheats Plus - by carterjam28yt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Nunito:wght@400;700;800;900&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #07070f;
+  color: #ddddf5;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(11,194,207,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11,194,207,.03) 1px, transparent 1px);
+  background-size: 44px 44px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(110px);
+}
+.blob-a {
+  width: 550px; height: 420px;
+  background: #0bc2cf;
+  opacity: .22;
+  top: -180px; left: -120px;
+  animation: blobA 14s ease-in-out infinite alternate;
+}
+.blob-b {
+  width: 480px; height: 580px;
+  background: #7000e8;
+  opacity: .18;
+  bottom: -200px; right: -80px;
+  animation: blobB 18s ease-in-out infinite alternate;
+}
+@keyframes blobA { to { transform: translate(70px, 90px) scale(1.05); } }
+@keyframes blobB { to { transform: translate(-90px, -60px) scale(.95); } }
+
+nav, main, footer { position: relative; z-index: 1; }
+
+nav {
+  position: sticky; top: 0;
+  backdrop-filter: blur(18px) saturate(1.4);
+  background: rgba(7,7,15,.6);
+  border-bottom: 1px solid #17172e;
+  z-index: 99;
+}
+.nav-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: 'Titan One', sans-serif;
+  font-size: 1.15rem;
+  color: #0bc2cf;
+  letter-spacing: .01em;
+}
+.logo span { color: #a855f7; }
+
+.navlinks { display: flex; gap: 24px; list-style: none; }
+.navlinks a {
+  color: #55557a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .88rem;
+  transition: color .15s;
+}
+.navlinks a:hover { color: #0bc2cf; }
+
+.page { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+.hero {
+  padding: 110px 0 60px;
+  text-align: center;
+}
+
+.pill {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  letter-spacing: .09em;
+  color: #0bc2cf;
+  background: rgba(11,194,207,.07);
+  border: 1px solid rgba(11,194,207,.25);
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin-bottom: 28px;
+  animation: up .5s ease both;
+}
+
+.hero-title {
+  font-family: 'Titan One', sans-serif;
+  font-size: clamp(2.6rem, 6.5vw, 5rem);
+  line-height: 1.06;
+  margin-bottom: 22px;
+  animation: up .5s .08s ease both;
+}
+.hero-title .c { color: #0bc2cf; }
+.hero-title .p { color: #a855f7; }
+
+.hero-desc {
+  font-size: 1.08rem;
+  color: #5f5f8a;
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 auto 36px;
+  animation: up .5s .16s ease both;
+}
+
+.btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: up .5s .24s ease both;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 9px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: .95rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .13s, filter .13s;
+}
+.btn:hover  { transform: translateY(-2px); filter: brightness(1.12); }
+.btn:active { transform: translateY(1px); }
+.btn-main {
+  background: #0bc2cf;
+  color: #030308;
+  box-shadow: 0 0 28px rgba(11,194,207,.3);
+}
+.btn-ghost {
+  background: transparent;
+  color: #9999bb;
+  border: 1px solid #1d1d35;
+}
+.btn-ghost:hover { color: #0bc2cf; border-color: rgba(11,194,207,.4); }
+
+.numstrip {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+  padding: 52px 0 76px;
+  animation: up .5s .32s ease both;
+}
+.num-block { text-align: center; }
+.num-block .n {
+  font-family: 'Titan One', sans-serif;
+  font-size: 2.4rem;
+  color: #0bc2cf;
+  display: block;
+}
+.num-block .l { font-size: .8rem; color: #44446a; margin-top: 2px; }
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
+section { padding: 72px 0; }
+
+.sec-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #0bc2cf;
+  margin-bottom: 10px;
+}
+.sec-heading {
+  font-family: 'Titan One', sans-serif;
+  font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+  margin-bottom: 12px;
+}
+.sec-sub {
+  color: #55557a;
+  font-size: .97rem;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 44px;
+}
+
+.feat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  gap: 18px;
+}
+.feat-card {
+  background: #0d0d1e;
+  border: 1px solid #181830;
+  border-radius: 13px;
+  padding: 26px;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+  position: relative;
+  overflow: hidden;
+}
+.feat-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0bc2cf, #a855f7);
+  opacity: 0;
+  transition: opacity .2s;
+}
+.feat-card:hover {
+  border-color: rgba(11,194,207,.22);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.4);
+}
+.feat-card:hover::after { opacity: 1; }
+.feat-icon { font-size: 1.9rem; margin-bottom: 12px; }
+.feat-name { font-family: 'Titan One', sans-serif; font-size: 1.05rem; margin-bottom: 8px; }
+.feat-blurb { font-size: .88rem; color: #55557a; line-height: 1.6; }
+
+.tab-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 26px; }
+.ctab {
+  font-family: 'DM Mono', monospace;
+  font-size: .75rem;
+  padding: 5px 15px;
+  border-radius: 999px;
+  border: 1px solid #1d1d35;
+  background: none;
+  color: #55557a;
+  cursor: pointer;
+  transition: all .15s;
+}
+.ctab:hover, .ctab.on {
+  border-color: #0bc2cf;
+  color: #0bc2cf;
+  background: rgba(11,194,207,.07);
+}
+
+.cheat-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 11px;
+}
+.cheat-row {
+  background: #0d0d1e;
+  border: 1px solid #181830;
+  border-radius: 9px;
+  padding: 13px 16px;
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  transition: border-color .15s;
+}
+.cheat-row:hover { border-color: #252545; }
+.dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+.dot-c { background: #0bc2cf; box-shadow: 0 0 5px #0bc2cf; }
+.dot-g { background: #22c55e; box-shadow: 0 0 5px #22c55e; }
+.cheat-row .cname { font-weight: 800; font-size: .88rem; }
+.cheat-row .cblurb { font-size: .78rem; color: #55557a; margin-top: 2px; }
+.badge {
+  font-family: 'DM Mono', monospace;
+  font-size: .62rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.badge-t { background: rgba(34,197,94,.1);  color: #22c55e; border: 1px solid rgba(34,197,94,.2); }
+.badge-r { background: rgba(168,85,247,.1); color: #a855f7; border: 1px solid rgba(168,85,247,.2); }
+
+.steps-wrap { display: flex; flex-direction: column; gap: 16px; }
+.step-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #0d0d1e;
+  border: 1px solid #181830;
+  border-radius: 13px;
+  padding: 22px 24px;
+  transition: border-color .15s;
+}
+.step-card:hover { border-color: rgba(11,194,207,.2); }
+.step-n {
+  font-family: 'Titan One', sans-serif;
+  font-size: 1.5rem;
+  color: #0bc2cf;
+  min-width: 32px;
+  line-height: 1;
+  padding-top: 2px;
+}
+.step-title { font-weight: 900; font-size: 1rem; margin-bottom: 5px; }
+.step-body  { font-size: .88rem; color: #55557a; line-height: 1.65; }
+
+code {
+  font-family: 'DM Mono', monospace;
+  font-size: .8rem;
+  background: rgba(11,194,207,.09);
+  color: #0bc2cf;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(11,194,207,.18);
+}
+
+.warn {
+  margin-top: 32px;
+  background: rgba(168,85,247,.05);
+  border: 1px solid rgba(168,85,247,.18);
+  border-radius: 11px;
+  padding: 18px 22px;
+  font-size: .87rem;
+  color: #55557a;
+  line-height: 1.7;
+}
+.warn b { color: #ddddf5; }
+
+footer {
+  border-top: 1px solid #111125;
+  padding: 32px 20px;
+  text-align: center;
+  font-size: .83rem;
+  color: #33334d;
+}
+footer a { color: #0bc2cf; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.sr {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.sr.show { opacity: 1; transform: none; }
+
+@media(max-width:580px) {
+  .navlinks { display: none; }
+  .numstrip { gap: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="blob blob-a"></div>
+<div class="blob blob-b"></div>
+
+<nav>
+  <div class="nav-inner">
+    <span class="logo">Blooket<span>Cheats+</span></span>
+    <ul class="navlinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#cheats">Cheats</a></li>
+      <li><a href="#install">Install</a></li>
+      <li><a href="https://github.com/Carterjam28yt" target="_blank">GitHub</a></li>
+      <li><a href="https://discord.gg/gumtufzYSn" target="_blank">Discord</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<div class="page">
+  <div class="hero">
+    <div class="pill">v16 &nbsp;·&nbsp; educational use only &nbsp;·&nbsp; free forever</div>
+    <h1 class="hero-title">
+      The <span class="c">Best</span> Blooket<br><span class="p">Mod Menu</span>
+    </h1>
+    <p class="hero-desc">
+      50+ cheats across every game mode. Auto-answer, ESP, cosmetics, host tools —
+      all in one drag-and-drop GUI. Made by carterjam28yt.
+    </p>
+    <div class="btns">
+      <a href="#install" class="btn btn-main">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+        Get the Bookmarklet
+      </a>
+      <a href="https://github.com/Carterjam28yt" target="_blank" class="btn btn-ghost">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        Source on GitHub
+      </a>
+    </div>
+    <div class="numstrip">
+      <div class="num-block"><span class="n">50+</span><span class="l">cheats total</span></div>
+      <div class="num-block"><span class="n">16+</span><span class="l">game modes</span></div>
+      <div class="num-block"><span class="n">v16</span><span class="l">current build</span></div>
+      <div class="num-block"><span class="n">$0</span><span class="l">cost, always</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="page">
+    <p class="sec-eyebrow sr">what's inside</p>
+    <h2 class="sec-heading sr">Everything you need</h2>
+    <p class="sec-sub sr">The GUI is draggable, themeable, and works on any Blooket page. Ctrl+E to hide it, Ctrl+X to close.</p>
+    <div class="feat-grid">
+      <div class="feat-card sr">
+        <div class="feat-icon">🎯</div>
+        <div class="feat-name">Auto Answer</div>
+        <div class="feat-blurb">Clicks the right answer for you — works on multiple choice AND typing questions. Toggle it on and just watch.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">👁️</div>
+        <div class="feat-name">Answer ESP</div>
+        <div class="feat-blurb">Colors correct answers green and wrong ones red. Subtle mode just removes the shadow so only you notice.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">🦆</div>
+        <div class="feat-name">Cosmetics</div>
+        <div class="feat-blurb">Play as literally any blook, drop a custom image URL as your character, or use any banner ID. Change your name mid-game too.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">🎮</div>
+        <div class="feat-name">Per-Mode Cheats</div>
+        <div class="feat-blurb">Dedicated panels for Gold, Crypto, Cafe, Factory, Fishing, Dinos, Defense, Brawl, Racing, Royale and more.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">🖥️</div>
+        <div class="feat-name">Host Tools</div>
+        <div class="feat-blurb">Force any game mode including seasonal ones like Egg Hunt and Shamrock Quest. Freeze the timer, kick everyone, enable mobile hosting.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">🎨</div>
+        <div class="feat-name">Theme Editor</div>
+        <div class="feat-blurb">Change every color in the GUI, scale it up or down, remap the keybinds, and export/import your theme as JSON.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">📡</div>
+        <div class="feat-name">Live Alerts Panel</div>
+        <div class="feat-blurb">Real-time log of everything happening — gold swaps, hacks, glitches, joins. Also shows a live leaderboard.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">💰</div>
+        <div class="feat-name">Daily Rewards</div>
+        <div class="feat-blurb">One click to claim max daily tokens and XP. Runs on play.blooket.com.</div>
+      </div>
+      <div class="feat-card sr">
+        <div class="feat-icon">🛡️</div>
+        <div class="feat-name">Report Blocker</div>
+        <div class="feat-blurb">Intercepts and drops Blooket's cheat-report network calls before they go out. Runs automatically on load.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cheats">
+  <div class="page">
+    <p class="sec-eyebrow sr">full list</p>
+    <h2 class="sec-heading sr">Browse all cheats</h2>
+    <p class="sec-sub sr">
+      <span class="badge badge-t">toggle</span> stays on until you turn it off.
+      <span class="badge badge-r">run</span> fires once when you click it.
+    </p>
+    <div class="tab-row sr" id="tabRow"></div>
+    <div class="cheat-list" id="cheatList"></div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="page">
+    <p class="sec-eyebrow sr">setup</p>
+    <h2 class="sec-heading sr">How to install</h2>
+    <p class="sec-sub sr">No extensions needed. Just a bookmark. Works in Chrome, Firefox, and Edge.</p>
+    <div class="steps-wrap">
+      <div class="step-card sr">
+        <div class="step-n">01</div>
+        <div>
+          <div class="step-title">Grab the bookmarklet file</div>
+          <div class="step-body">Download <code>bookmarklet.js</code> from the GitHub repo. Open it in any text editor and select all + copy the whole thing.</div>
+        </div>
+      </div>
+      <div class="step-card sr">
+        <div class="step-n">02</div>
+        <div>
+          <div class="step-title">Make a new bookmark</div>
+          <div class="step-body">Press <code>Ctrl+Shift+B</code> to show your bookmarks bar, right-click it and hit "Add page" or "Add bookmark". Call it whatever you want.</div>
+        </div>
+      </div>
+      <div class="step-card sr">
+        <div class="step-n">03</div>
+        <div>
+          <div class="step-title">Paste the code as the URL</div>
+          <div class="step-body">Edit the bookmark, clear the URL field, then paste the whole file contents in. It starts with <code>javascript:(</code>. Save it.</div>
+        </div>
+      </div>
+      <div class="step-card sr">
+        <div class="step-n">04</div>
+        <div>
+          <div class="step-title">Click it on Blooket</div>
+          <div class="step-body">Go to <code>blooket.com</code> or join a game, then click the bookmark. The menu pops up — drag it with the blue handle or top bar. <code>Ctrl+E</code> hides it, <code>Ctrl+X</code> closes it completely.</div>
+        </div>
+      </div>
+    </div>
+    <div class="warn sr">
+      <b>⚠️ heads up:</b> this is for <b>educational purposes only</b>. use it in your own games or places where you have permission.
+      not responsible for what you do with it — you're on your own. use at your own risk.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  built by <a href="https://github.com/Carterjam28yt" target="_blank">@carterjam28yt</a>
+  &nbsp;·&nbsp;
+  <a href="https://discord.gg/gumtufzYSn" target="_blank">discord</a>
+  &nbsp;·&nbsp;
+  educational use only
+</footer>
+
+<script>
+// per-mode cheat data
+var allCheats = {
+  global: [
+    { n:'Auto Answer',        t:'toggle', d:'Clicks correct answers for you' },
+    { n:'Highlight Answers',  t:'toggle', d:'Green = correct, red = wrong' },
+    { n:'Subtle Highlight',   t:'toggle', d:'Removes shadow from correct answers only' },
+    { n:'Freeze Leaderboard', t:'toggle', d:'Freezes the host leaderboard display' },
+    { n:'Percent Auto Answer',t:'toggle', d:'Answers to hit a target grade %' },
+    { n:'Use any Banner',     t:'run',    d:'Pick any banner from a dropdown' },
+    { n:'Use Banner IDs',     t:'run',    d:'Apply a banner by raw ID string' },
+    { n:'Change Blook',       t:'run',    d:'Swap your blook mid-game' },
+    { n:'Custom Blook URL',   t:'run',    d:'Use any image URL as your blook' },
+    { n:'Change Name',        t:'run',    d:'Change your display name mid-game' },
+    { n:'Remove Name Limit',  t:'run',    d:'Bumps name character limit to 120' },
+    { n:'Remove Random Name', t:'run',    d:'Lets you type a fully custom name' },
+    { n:'Bypass Filter',      t:'run',    d:'Copies filter-bypassed text to clipboard' },
+    { n:'Get Daily Rewards',  t:'run',    d:'Claims max daily tokens + XP' },
+    { n:'Use any Blook',      t:'run',    d:'Unlocks all blooks on lobby / dashboard' },
+    { n:'Sell Dupe Blooks',   t:'run',    d:'Sells all dupes, keeps 1 of each' },
+  ],
+  host: [
+    { n:'Host Any Gamemode',    t:'run', d:'Force any mode — including seasonal ones' },
+    { n:'Toggle Spooky Theme',  t:'run', d:'Spooky skin on Gold Quest' },
+    { n:'Freeze Timer',         t:'run', d:'Stops the host timer dead' },
+    { n:'Hours on Timer',       t:'run', d:'Renders HH:MM:SS on the host timer' },
+    { n:'Remove Time Limit',    t:'run', d:'Removes the question count cap' },
+    { n:'Realtime Leaderboard', t:'run', d:'Leaderboard updates live as players score' },
+    { n:'Mobile Hosting',       t:'run', d:'Lets you host a game from a phone' },
+    { n:'Kick All Players',     t:'run', d:'Removes everyone from the lobby' },
+  ],
+  'gold quest': [
+    { n:'Always Triple',    t:'toggle', d:'Forces x3 gold chest option' },
+    { n:'Always Quintuple', t:'toggle', d:'Forces x5 gold chest option' },
+    { n:'Auto Choose',      t:'toggle', d:'Picks the chest that gives most gold' },
+    { n:'Chest ESP',        t:'toggle', d:'Shows chest contents before you click' },
+    { n:'Set Gold',         t:'run',    d:'Set your gold to any number' },
+    { n:'Swap Gold',        t:'run',    d:'Swap totals with another player' },
+    { n:'Set Player Gold',  t:'run',    d:'Force a specific player to any amount' },
+  ],
+  'crypto hack': [
+    { n:'Always Triple',    t:'toggle', d:'Forces triple crypto every round' },
+    { n:'Always Quintuple', t:'toggle', d:'Forces quintuple crypto' },
+    { n:'Always Hack',      t:'toggle', d:'Forces the hack option every time' },
+    { n:'Password ESP',     t:'toggle', d:'Wrong passwords highlight red' },
+    { n:'Auto Guess',       t:'toggle', d:'Auto-completes hacks for you' },
+    { n:'Remove Hack',      t:'run',    d:'Clears an active incoming hack' },
+    { n:'Set Crypto',       t:'run',    d:'Set your crypto total' },
+    { n:'Set Password',     t:'run',    d:'Set your own hacking password' },
+  ],
+  cafe: [
+    { n:'Max Items',        t:'run', d:'Max out all shop items (run in shop)' },
+    { n:'Remove Customers', t:'run', d:'Skip the current customer wave' },
+    { n:'Reset Abilities',  t:'run', d:'Resets used shop abilities' },
+    { n:'Set Cash',         t:'run', d:'Set your cafe cash to any amount' },
+    { n:'Stock Food',       t:'run', d:'Sets all food stock to 99' },
+  ],
+  factory: [
+    { n:'Free Upgrades',   t:'run', d:'Sets all upgrade costs to zero' },
+    { n:'Max Blooks',      t:'run', d:'Max out all your blook levels' },
+    { n:'Remove Glitches', t:'run', d:'Clears all active glitches and hazards' },
+    { n:'Set Cash',        t:'run', d:'Set your factory cash' },
+    { n:'Send Glitch',     t:'run', d:'Fire a glitch at everyone else' },
+    { n:'All MegaBot',     t:'run', d:'Replaces all blooks with maxed Mega Bots' },
+  ],
+  fishing: [
+    { n:'Frenzy',              t:'run',    d:'Puts you into frenzy mode instantly' },
+    { n:'Always Frenzy',       t:'toggle', d:'Keeps everyone in frenzy permanently' },
+    { n:'Remove Distractions', t:'toggle', d:'No more random distractions appearing' },
+    { n:'Set Weight',          t:'run',    d:'Set your current fish weight' },
+    { n:'Set Next Fish',       t:'run',    d:'Choose exactly what fish you reel in next' },
+    { n:'Set Lure',            t:'run',    d:'Set lure level 1 through 5' },
+  ],
+  dinos: [
+    { n:'Set Fossils',     t:'run',    d:'Set your fossil count directly' },
+    { n:'Set Multiplier',  t:'run',    d:'Set per-excavation fossil multiplier' },
+    { n:'Auto Choose',     t:'toggle', d:'Picks the best rock every time' },
+    { n:'Rock ESP',        t:'toggle', d:'Shows what\'s hiding under each rock' },
+    { n:'Stop Cheat Flag', t:'run',    d:'Clears the isCheating flag on your player' },
+  ],
+  brawl: [
+    { n:'Invincibility',    t:'run', d:'You can\'t take any damage' },
+    { n:'Instant Kill',     t:'run', d:'Sets all enemy HP to 1' },
+    { n:'Half Enemy Speed', t:'run', d:'Enemies move at half speed' },
+    { n:'Double Enemy XP',  t:'run', d:'Doubles XP dropped from enemies' },
+    { n:'Kill All Enemies', t:'run', d:'Wipes all on-screen enemies' },
+    { n:'Max Abilities',    t:'run', d:'Maxes out all your current abilities' },
+    { n:'Set XP',           t:'run', d:'Set your XP to any value' },
+  ],
+  defense: [
+    { n:'Max Tower Stats',  t:'run', d:'All towers become completely OP' },
+    { n:'Remove Enemies',   t:'run', d:'Clears enemies from the field' },
+    { n:'Remove Obstacles', t:'run', d:'Lets you place towers anywhere' },
+    { n:'Set Tokens',       t:'run', d:'Set your token count' },
+    { n:'Set Round',        t:'run', d:'Jump to any round number' },
+    { n:'Set Damage',       t:'run', d:'Set tower base damage' },
+  ],
+  racing: [
+    { n:'Instant Win',   t:'run', d:'Skips straight to finishing the race' },
+    { n:'Set Questions', t:'run', d:'Set how many questions you have left' },
+    { n:'Attack Player', t:'run', d:'Send wind, rocket, fire, or freeze at someone' },
+  ],
+  royale: [
+    { n:'Auto Answer (toggle)', t:'toggle', d:'Keeps auto-answering every new round' },
+    { n:'Auto Answer (once)',   t:'run',    d:'Answers the current question right now' },
+  ],
+  extras: [
+    { n:'Dark Mode',       t:'run', d:'Slaps a dark filter on the whole page' },
+    { n:'Tab Cloaker',     t:'run', d:'Change the browser tab icon and title' },
+    { n:'Auto Clicker',    t:'run', d:'Auto-clicks at your cursor — S key to toggle' },
+    { n:'3D Page',         t:'run', d:'Makes the whole page tilt in 3D with your mouse' },
+    { n:'History Flooder', t:'run', d:'Floods your browser history entries' },
+    { n:'Invert Colors',   t:'run', d:'Inverts every color on the page' },
+  ],
+};
+
+var tabNames = Object.keys(allCheats);
+var activeTab = tabNames[0];
+var tabRow = document.getElementById('tabRow');
+var cheatList = document.getElementById('cheatList');
+
+tabNames.forEach(function(name) {
+  var btn = document.createElement('button');
+  btn.className = 'ctab' + (name === activeTab ? ' on' : '');
+  btn.textContent = name;
+  btn.onclick = function() {
+    activeTab = name;
+    document.querySelectorAll('.ctab').forEach(function(b) { b.classList.remove('on'); });
+    btn.classList.add('on');
+    buildCheats(name);
+  };
+  tabRow.appendChild(btn);
+});
+
+function buildCheats(tab) {
+  var list = allCheats[tab] || [];
+  cheatList.innerHTML = '';
+  list.forEach(function(item) {
+    var row = document.createElement('div');
+    row.className = 'cheat-row';
+    var dotCls = item.t === 'toggle' ? 'dot-g' : 'dot-c';
+    var badgeCls = item.t === 'toggle' ? 'badge-t' : 'badge-r';
+    row.innerHTML =
+      '<div class="dot ' + dotCls + '"></div>' +
+      '<div>' +
+        '<div class="cname">' + item.n +
+          ' <span class="badge ' + badgeCls + '">' + item.t + '</span>' +
+        '</div>' +
+        '<div class="cblurb">' + item.d + '</div>' +
+      '</div>';
+    cheatList.appendChild(row);
+  });
+}
+
+buildCheats(activeTab);
+
+// scroll reveal
+var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (!entry.isIntersecting) return;
+    var siblings = Array.from(entry.target.parentElement.querySelectorAll('.sr'));
+    var pos = siblings.indexOf(entry.target);
+    entry.target.style.transitionDelay = Math.min(pos * 55, 280) + 'ms';
+    entry.target.classList.add('show');
+    io.unobserve(entry.target);
+  });
+}, { threshold: 0.07 });
+
+document.querySelectorAll('.sr').forEach(function(el) { io.observe(el); });
+</script>
+</body>
+</html>
